@@ -1,0 +1,209 @@
+:root {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--body-bg-color);
+  padding: 0 2em;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  
+}
+main{
+  width: 100%;
+}
+.containerInfo{
+  display: flex;
+}
+body ,h1, h2, h3, h4, h5, p, svg{
+  color: var(--text-color);
+  margin-bottom: 0.75rem;
+}
+body a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+
+.devideInfo{
+  display: block;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+.devideMore-desktop{
+ display: block;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 2.5em;
+  padding: 0 10px;
+  width: 60%;
+  
+}
+.profile{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.profile img{
+width: 10em;
+height: 10em;
+border-radius: 50%;
+border: rgb(97, 238, 97) 2px solid;
+margin: 2em;
+}
+
+.cards{
+  margin: 20px 0;
+  border-radius: 1em;
+  box-shadow: 5px 0px 5px rgba(0, 0, 0, .5);
+  padding: 30px;
+}
+body .cards{
+  background-color: var(--bg-cards);
+}
+
+.itemsAlign a{
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-items: center;
+  text-decoration: none;
+  margin-bottom: 1em;
+}
+
+
+.techs{
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  gap: 10px;
+  
+
+}
+
+.techs h4{
+  border-radius: 20px;
+  background-color: var(--bg-techs);
+  font-weight: 600;
+  text-transform:uppercase;
+  color: #202020;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 15px;
+  width: 8.50rem;
+}
+
+
+.between-text{
+  justify-content: space-between;
+  display: flex;
+}
+
+.sectionProject{
+  display: flex;
+  gap: 1rem;
+  width: auto;
+}
+.sectionProject > .cards{
+  width: 100%;
+}
+
+.sectionProject > .cards > .itemMyOnix{
+  display: flex;
+  gap: 2rem;
+  margin-right: 2px;
+  width: 100%;
+}
+
+.sectionProject > .cards >  .between-text > .itemMyOnix{
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.alignInfo{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: .60rem;
+  width: 100%;
+}
+.circle{
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #dfd32c;
+  border: none;
+  margin-top: -12px;
+}
+
+.profileImgInfo{
+  display: flex;
+  width: 100%;
+  gap: .80rem;
+}
+.profileImgInfo img{
+  width: 8em;
+  height: 8em;
+  border-radius: 10px;
+}
+
+
+.rastegInfo{
+  display: flex;
+  gap: 2rem;
+  font-size: 18px;
+}
+
+.devideMore-mobile{
+  display: none;
+}
+/* MEDIA SCREEN ADAPTER */
+
+@media screen and (max-width: 375px),(max-width: 360px) ,(max-width:414px) {
+  
+  .containerInfo{
+   width: 100%;
+   
+  }
+  .techs{
+    flex-direction: column;
+  }
+  .devideMore-desktop{
+    display: none;
+  }
+  .devideMore-mobile{
+    display: block;
+  }
+  .sectionProject, .formatingTexts, .rastegInfo, .profileImgInfo{
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:667px), (max-width:896px), (max-width: 915px), (max-width: 1024px) {
+  .devideMore-desktop{
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1024px), (max-width: 1280px) {
+  .techs h4{
+    width: 100%;
+  }
+  
+}
